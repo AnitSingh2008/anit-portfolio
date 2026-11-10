@@ -181,15 +181,19 @@ export function Navigation() {
                   {item.label}
                 </motion.button>
               ))}
+
               <motion.button
                 onClick={() => scrollToSection("#contact")}
-                className="w-full bg-[#AFFF00] text-[#121212] px-6 py-3 rounded-full font-bold text-sm tracking-wide mt-4"
+                className="w-full bg-[#AFFF00] text-[#121212] px-6 py-3 rounded-full font-bold text-sm tracking-wide mt-4 shadow-[0_0_15px_rgba(175,255,0,0.15)] hover:shadow-[0_0_25px_rgba(175,255,0,0.35)] transition-shadow duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ delay: 0.3, duration: 0.3 }}
               >
                 Hire Me
               </motion.button>
+
             </div>
           </motion.div>
         )}
