@@ -32,8 +32,7 @@ const projects = [
     "Git",
     "GitHub"
   ],
-  liveUrl: null,
-  status: "Deployment in Progress",
+  liveUrl: "https://nexa-mart-cyan.vercel.app/",
   accent: "#AFFF00",
 },
   {
